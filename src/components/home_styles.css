@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('electro.gif'); /* Add your background image path here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 250px; /* You can adjust the size as needed */
+    margin: 10px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#rotate-button {
+    padding: 30px 60px; /* Increased padding for a larger button */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 60px; /* Moved the button down by 3 times its height */
+    font-size: 24px; /* Increased font size */
+    animation: electricEffect 1s infinite; /* Added animation for electric effect */
+}
+
+@keyframes electricEffect {
+    0% {
+        background-color: #007BFF;
+        box-shadow: 0 0 10px #007BFF, 0 0 20px #07B107, 0 0 30px #07B107;
+    }
+    50% {
+        background-color: #07B107;
+        box-shadow: 0 0 10px #07B107, 0 0 20px #07B107, 0 0 30px #007BFF;
+    }
+    100% {
+        background-color: #007BFF;
+        box-shadow: 0 0 10px #007BFF, 0 0 20px #07B107, 0 0 30px #07B107;
+    }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.shaking {
+  animation: shake 2s infinite;
+}
+
+  

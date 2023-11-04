@@ -1,0 +1,160 @@
+/* Define your styles here */
+body {
+  background-color: #333; /* Dark grey background color */
+  background-image: url('test.png'); /* Add your background image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+.download-button {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  padding: 0px 40px; /* Increase padding for larger button size */
+  margin: 20px auto 0; /* Add margin-top to move the button down */
+  display: block;
+  cursor: pointer;
+  font-size: 3rem; /* Make font size 3 times bigger */
+}
+
+
+
+.container {
+  text-align: center;
+  background-color: #5f99db; 
+  background-image: url('r.png');/* White background color for the container */
+  border-radius: 130px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  max-width: 600%;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+h1 {
+  font-size: 100px; /* Increase the font size and make it bold */
+  font-weight: bold;
+  color: #f7f4f4;
+  margin-top: 40px; /* Reduce the margin to bring it closer to h2 */
+}
+
+h2 {
+  font-size: 36px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #9db725; /* Set the text color to white */
+  border: 2px solid #404c3f; /* Add a green border */
+  padding: 10px; /* Add padding for spacing */
+  border-radius: 10px; /* Add rounded corners to the border */
+}
+
+
+h3 {
+  color: rgb(242, 255, 242); /* Set the text color to white */
+}
+
+span {
+  color: #19d608;
+}
+
+p {
+  font-size: 20px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #555;
+}
+
+.gen-form {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 20px; /* Increase the font size */
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+}
+
+.loading {
+  font-size: 24px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #007bff;
+  margin-top: 20px;
+}
+
+.result-image {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 400%; /* Set the max-width to 200% */
+  max-height: 500%; /* Set the max-height to 200% */
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Add these styles to your CSS */
+
+
+.history-button {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add color transition */
+  margin-right: 10px; /* Add margin to create a gap */
+}
+
+.history-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.history-output {
+  font-size: 24px; /* Increase the font size */
+  animation: text-color-change 2s infinite alternate; /* Add animation for color change */
+}
+.input-text {
+  font-size: 24px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add border transition */
+}
+
+
+.input-text:focus {
+  border-color: #007bff; /* Blue border when focused */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Box shadow when focused */
+}
+
+.white-bold-label {
+  font-weight: bold;
+  color: white;
+}
+
+
+@keyframes text-color-change {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #007bff; /* Blue color */
+  }
+}
